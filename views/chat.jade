@@ -1,0 +1,38 @@
+doctype 5
+html
+  head
+    link(href='/chat.css', rel='stylesheet')
+    script(src='/jquery-1.7.2.min.js')
+    script(src='/processing-1.3.6.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/chat.js')
+    title Processing Workshop Tool
+  body version 001
+    #sample
+      .user.horizontal.me
+        .nick
+        form
+          textarea(wrap="off")
+        .buttonbar
+          button.ask ?
+          button.run run
+      .user.horizontal.notme
+        .nick
+        form
+          textarea(wrap="off", readonly)
+        .buttonbar
+          button.ask ?
+          button.run run
+    #code
+    #chat
+      #connecting
+        p Connecting to socket.io server
+      #messages
+        #lines
+      form#send-message
+        input#message
+        button Send
+    #p5display
+      #p5close x
+      #p5container
+
