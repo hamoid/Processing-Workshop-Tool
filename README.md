@@ -19,10 +19,11 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 * npm install jade
 * npm install socket.io
 * npm install sqlite3
+* npm install stylus
 
 ## Run
 * cd Processing-Workshop-Tool/
-* node chat.js
+* node server.js
 * Open http://localhost:3000 in your browser.
 * Open http://{your IP}:3000 in other computers or smartphones in your network.
 * Click the green window title bar to set your name.
@@ -42,6 +43,7 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 * Currently data is all in memory. If you stop node, it's all gone. Save to a sqlite3 database.
 * Is there a way to send key presses on real time instead of sending the whole code once per second?
 * Add a new associative array to keep track of connected users. Notify clients when users are gone to hide their editors.
+* Let users mark when code is in a runnable state.
 
 ## Links
 * http://processing.org

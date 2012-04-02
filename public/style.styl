@@ -1,0 +1,134 @@
+rounded()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  -o-border-radius: arguments
+  border-radius: arguments
+
+HTML, BODY
+  padding 0px
+  margin 0px
+  height 100%
+  font-size 9pt
+
+FORM
+  margin 0px
+  padding 0px
+
+BODY, INPUT, TEXTAREA, BUTTON
+  font-size 9pt
+  font-family Terminus,Consolas,Profont,"Andale Mono",Monaco,Inconsolata,Inconsolata-g,Unifont,Lime,"ClearlyU PUA",Clean,"DejaVu Sans Mono","Lucida Console","Bitstream Vera Sans Mono",Freemono,"Liberation Mono",Dina,Anka,Droid Sans Mono,Anonymous Pro,Proggy fonts,Envy Code R,Gamow,Courier,"Courier New",Terminal,monospace
+
+BUTTON
+  rounded 5px
+  background-color #F3F8D5
+  border 1px solid #D1E17C
+
+TEXTAREA
+  rounded 5px
+  border 1px solid #ADE6F6
+  width 200px
+  height 200px
+  white-space pre
+  overflow scroll
+  overflow-y scroll
+  overflow-x scroll
+  margin 4px 4px 0px 4px
+  padding 4px
+
+EM
+  color #909090
+
+DIV.horizontal
+  display inline-block
+
+P
+  margin 0px
+
+B
+  font-weight normal
+  color #72C178
+
+#sample
+  display none
+
+#chat
+  background-color #FFEB8A
+  position absolute
+  left 0px
+  top 0px
+  padding 0px
+  width 250px
+  border-right 1px solid #DECD7B
+  height auto !important
+  height 100%
+  min-height 100%
+
+#p5display
+  display none
+  position absolute
+  left 0px
+  top 0px
+  background-color #FFF
+  border 1px solid #EEE
+
+#p5close
+  cursor pointer
+  font-weight bold
+  text-align right
+  margin-top 8px
+  margin-right 10px
+
+#p5canvas
+  margin 10px
+
+#messages #lines
+  background-color #FFF
+  margin 10px
+  padding 5px
+  border 1px solid #DECD7B
+  height 300px
+  overflow auto
+
+#send-message
+  position absolute
+  left 5px
+  bottom 5px
+  INPUT
+    width 170px
+
+#code
+  margin-top 0px
+  margin-left 265px
+  DIV
+    vertical-align top
+    margin-right 2px
+
+DIV.nick
+  margin-top 4px
+  margin-left 7px
+
+.active
+  border 1px solid #C0651D
+  background-color #FF7000
+  color #FFF
+
+DIV.user
+  margin-bottom 10px
+  radius 5px
+  &.me
+    border 1px solid #B6E682
+    background-color #DCFFB6
+    DIV.nick
+      font-weight bold
+      cursor pointer
+      color #719C42
+  &.notme
+    border 1px solid #ADE6F6
+    background-color #E3F9FF
+    DIV.nick
+      color #519EB3
+
+DIV.buttonbar
+  margin-top 2px
+  margin-left 3px
+  margin-bottom 2px

@@ -2,7 +2,10 @@
 
 require('jade');
 
+var stylus = require('stylus');
+
 var app = require('express').createServer();
+app.use(stylus.middleware({ src: __dirname + '/public' }));
 app.set('view engine', 'jade');
 app.set('view options', { layout: false });
 
@@ -11,7 +14,7 @@ app.get('/*.(js|css)', function(req, res){
 });
 
 app.get('/', function (req, res) {
-  res.render('chat', { layout: false });
+  res.render('index', { layout: false });
 });
 
 app.listen(3000, function () {
