@@ -12,18 +12,18 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 
 ## Install
 * Download and compile a recent version of node.js: http://nodejs.org/#download and
-* Download and install a recent version of npm: http://npmjs.org/
+* Download and install a recent version of npm: http://npmjs.org/ (maybe automatically installed with node.js)
 * git clone git://github.com/hamoid/Processing-Workshop-Tool.git
 * cd Processing-Workshop-Tool/
 * npm install express
 * npm install jade
 * npm install socket.io
-* npm install sqlite3
 * npm install stylus
+* npm install -g coffee-script
 
 ## Run
 * cd Processing-Workshop-Tool/
-* node server.js
+* coffee server
 * Open http://localhost:3000 in your browser.
 * Open http://{your IP}:3000 in other computers or smartphones in your network.
 * Click the green window title bar to set your name.
@@ -33,6 +33,8 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 * Chat.
 
 ## Ideas
+* ~~Port JavaScript to CoffeeScript~~ done.
+* Use backbone.js to make the code easier to work with.
 * Show line numbers in the editor.
 * Double click any keyword to open Processing documentation.
 * Block interface while running code.
@@ -40,8 +42,8 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 * Collapse editor windows when too many users.
 * Allow pausing real time updates to make it easy to copy code from others. It's hard to select and copy code being edited.
 * Short-cut for running code.
-* Currently data is all in memory. If you stop node, it's all gone. Save to a sqlite3 database.
-* Is there a way to send key presses on real time instead of sending the whole code once per second?
+* Currently data is all in memory. If you stop node, it's all gone. Save to a database.
+* Is there a way to send key presses on real time instead of sending the whole code once per second? Is it worth it?
 * Add a new associative array to keep track of connected users. Notify clients when users are gone to hide their editors.
 * Let users mark when code is in a runnable state.
 
