@@ -1,5 +1,7 @@
 # Processing Workshop Tool
 
+Screenshot: https://github.com/hamoid/Processing-Workshop-Tool/wiki
+
 This tool was written as an experiment to be used in a four day creative programming workshop with up to 10 students. It runs on my laptop and all users must be connected to the same wireless network.
 
 It allows each student to view the code written by the teacher and by the other students almost in real time. It includes a simple chat, allows running the code written by any of the participants using processing.js, and has a question mark button to call the attention of the teacher (like calling for the flight attendant in airplanes).
