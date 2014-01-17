@@ -1,0 +1,145 @@
+HTML,
+BODY {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-size: 9pt;
+}
+FORM {
+  margin: 0px;
+  padding: 0px;
+}
+BODY,
+INPUT,
+TEXTAREA,
+BUTTON {
+  font-size: 9pt;
+  font-family: Terminus, Consolas, Profont, "Andale Mono", Monaco, Inconsolata, Inconsolata-g, Unifont, Lime, "ClearlyU PUA", Clean, "DejaVu Sans Mono", "Lucida Console", "Bitstream Vera Sans Mono", Freemono, "Liberation Mono", Dina, Anka, Droid Sans Mono, Anonymous Pro, Proggy fonts, Envy Code R, Gamow, Courier, "Courier New", Terminal, monospace;
+}
+BUTTON {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #f3f8d5;
+  border: 1px solid #d1e17c;
+}
+TEXTAREA {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ade6f6;
+  width: 200px;
+  height: 200px;
+  white-space: pre;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  margin: 4px 4px 0px 4px;
+  padding: 4px;
+}
+EM {
+  color: #909090;
+}
+DIV.horizontal {
+  display: inline-block;
+}
+P {
+  margin: 0px;
+}
+B {
+  font-weight: normal;
+  color: #72c178;
+}
+#sample {
+  display: none;
+}
+#chat {
+  background-color: #ffeb8a;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  width: 250px;
+  border-right: 1px solid #decd7b;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+#p5display {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+#p5close {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+#p5canvas {
+  margin: 10px;
+}
+#messages #lines {
+  background-color: #fff;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #decd7b;
+  height: 300px;
+  overflow: auto;
+}
+#send-message {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+#send-message INPUT {
+  width: 170px;
+}
+#code {
+  margin-top: 0px;
+  margin-left: 265px;
+}
+#code DIV {
+  vertical-align: top;
+  margin-right: 2px;
+}
+DIV.nick {
+  margin-top: 4px;
+  margin-left: 7px;
+}
+.active {
+  border: 1px solid #c0651d;
+  background-color: #ff7000;
+  color: #fff;
+}
+DIV.user {
+  margin-bottom: 10px;
+  radius: 5px;
+}
+DIV.user.me {
+  border: 1px solid #b6e682;
+  background-color: #dcffb6;
+}
+DIV.user.me DIV.nick {
+  font-weight: bold;
+  cursor: pointer;
+  color: #719c42;
+}
+DIV.user.notme {
+  border: 1px solid #ade6f6;
+  background-color: #e3f9ff;
+}
+DIV.user.notme DIV.nick {
+  color: #519eb3;
+}
+DIV.buttonbar {
+  margin-top: 2px;
+  margin-left: 3px;
+  margin-bottom: 2px;
+}
