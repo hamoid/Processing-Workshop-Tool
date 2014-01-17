@@ -10,18 +10,14 @@ There is no registration or security of any kind. I wanted it to work just by op
 
 Everything was done in three days, from watching tutorials about node.js, socket.io, jade, etc., to downloading node.js and npm, compiling it all and writing the programs. If something is totally wrong, you know why :)
 
-Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
+Tested on Ubuntu 13.10, Firefox 26, Chromium 31, Node v0.10.24 and npm 1.3.21.
 
 ## Install
 * Download and compile a recent version of node.js: http://nodejs.org/#download and
 * Download and install a recent version of npm: http://npmjs.org/ (maybe automatically installed with node.js)
 * git clone git://github.com/hamoid/Processing-Workshop-Tool.git
 * cd Processing-Workshop-Tool/
-* npm install express
-* npm install jade
-* npm install socket.io
-* npm install stylus
-* npm install -g coffee-script
+* npm install
 
 ## Run
 * cd Processing-Workshop-Tool/
