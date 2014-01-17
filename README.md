@@ -25,7 +25,7 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 
 ## Run
 * cd Processing-Workshop-Tool/
-* coffee server
+* node server.js
 * Open http://localhost:3000 in your browser.
 * Open http://{your IP}:3000 in other computers or smartphones in your network.
 * Click the green window title bar to set your name.
@@ -35,7 +35,6 @@ Tested on Ubuntu 11.10, Firefox 11, Chromium 17, Node 0.6.3 and npm 1.1.12.
 * Chat.
 
 ## Ideas
-* ~~Port JavaScript to CoffeeScript~~ done.
 * Use backbone.js to make the code easier to work with.
 * Show line numbers in the editor.
 * Double click any keyword to open Processing documentation.
