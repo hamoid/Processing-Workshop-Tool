@@ -2,9 +2,12 @@
 
 require('jade');
 
-var stylus = require('stylus');
+var stylus = require('stylus'),
+    express = require('express'),
+    http = require('http'),
+    app = express(),
+    server = http.createServer(app);
 
-var app = require('express').createServer();
 app.use(stylus.middleware({ src: __dirname + '/public' }));
 app.set('view engine', 'jade');
 app.set('view options', { layout: false });
@@ -17,15 +20,13 @@ app.get('/', function (req, res) {
   res.render('index', { layout: false });
 });
 
-app.listen(3000, function () {
-  console.log('Listening on port ' + app.address().port);
-});
+server.listen(3000);
 
 // associative array that holds user names and is
 // indexed by ip addresses in this form: u127_0_0_1
 var nicknames = {};
 
-var io = require('socket.io').listen(app);
+var io = require('socket.io').listen(server);
 io.set('log level', 2);
 
 io.sockets.on('connection', function (socket) {
